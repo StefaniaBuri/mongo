@@ -6,7 +6,7 @@ let Credentials = require("./schema");
 mongoose.connect("mongodb://localhost:27017/mongo",
                 {useNewUrlParser: false, useUnifiedTopology: false }) 
                 
-/*
+
 let userDocument = new User({
     login: "nia",
     password: "0506",
@@ -42,7 +42,7 @@ function checkRespuesta(err,res){
      console.log(res)
     }
 }
-*/
+
 
 let credentialsDocument = new Credentials({
     address:"c/Boltaña 3",
@@ -60,3 +60,4 @@ function checkRespuesta(err,res){
      console.log(res)
     }
 }
+
